@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sahmirbgsApp">
+<head>
+    <base href="/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+    <!-- WEB FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800%7CDosis:300,400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+    <!-- CORE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/sky-forms.css" rel="stylesheet" type="text/css" />
+    <link href="css/weather-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/line-icons.css" rel="stylesheet" type="text/css" />
+    
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+
+    <!-- REVOLUTION SLIDER -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/revolution-slider.css" rel="stylesheet" type="text/css" /> 
+
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />  
+    <link href="css/owl.transitions.css" rel="stylesheet">
+
+    <!-- THEME CSS -->
+    <link href="css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+
+    <!-- Morenizr -->
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
+    
+</head>
+<body class="smoothscroll" ng-controller="layoutCotroller">
+    <div id="wrapper"> 
+ 
+        <header id="header" class="sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a class="logo" href="home" title="Sahmir Build Green Solutions">
+                            <img src="img/logo.png" alt="Sahmir-BGS">
+                        </a>
+                    </div> 
+                    <nav class="col-sm-9 top-nav">
+                        <ul>
+                            <li><a href="#home-section" du-smooth-scroll du-scrollspy title="Home">Home</a></li>
+                            <li><a href="#aboutus-section" du-smooth-scroll du-scrollspy offset="68" title="About Us">About Us</a></li>
+                            <li><a href="javascript:void(0)" title="Product">Products <span class="main-parrent-arrow fa fa-angle-down"></span></a>
+                                <ul>
+                                    <li><a href="" title="">Floor Solutions <span class="sub-arrow fa fa-angle-right"></span></a>
+                                        <ul>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Ceramic tiles">Ceramic tiles</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="HDF Floor">HDF Floor</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="MDF Floor">MDF Floor</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="PVC Floor">PVC Floor</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Raqised Floor">Raqised Floor</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="WPC Floor">WPC Floor</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="" title="">Ceiling Solutions <span class="sub-arrow fa fa-angle-right"></span></a>
+                                        <ul>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Acoustic Gypsum Ceiling">Acoustic Gypsum Ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="ACP ceiling">ACP ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Ecophon Ceiling">Ecophon Ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Laminated Gypsum Grid Ceiling">Laminated Gypsum Grid Ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="MDF design Ceiling">MDF design Ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Metal Cell Ceiling">Metal Cell Ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Metal Clip in Ceiling">Metal Clip in Ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Metal Lay in Ceiling">Metal Lay in Ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Metal Louver Ceiling">Metal Louver Ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Mineral fiber ceiling">Mineral fiber ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Plain or Drop Gypsum Ceiling">Plain or Drop Gypsum Ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Polycarbonate sheet ceiling">Polycarbonate sheet ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="PVC grid ceiling">PVC grid ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="PVC panel ceiling">PVC panel ceiling</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="WPC ceiling">WPC ceiling</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="" title="">Wall Paneling <span class="sub-arrow fa fa-angle-right"></span></a>
+                                        <ul>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="3D panel board">3D panel board</a></li> 
+                                            <li><a ui-sref="floor-ceramic-tiles" title="ABS sheet board panel">ABS sheet board panel</a></li> 
+                                            <li><a ui-sref="floor-ceramic-tiles" title="ACP board panel">ACP board panel</a></li> 
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Drywall Gypsum">Drywall Gypsum</a></li> 
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Glass Block Panel">Glass Block Panel</a></li> 
+                                            <li><a ui-sref="floor-ceramic-tiles" title="MDF 3D panel board">MDF 3D panel board</a></li> 
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Mosaic Series Panel">Mosaic Series Panel</a></li> 
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Polycarbonate sheet panel">Polycarbonate sheet panel</a></li> 
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Wallpaper">Wallpaper</a></li> 
+                                            <li><a ui-sref="floor-ceramic-tiles" title="WPC panel board">WPC panel board</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="" title="">Other <span class="sub-arrow fa fa-angle-right"></span></a>
+                                        <ul>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Air Condition Solution">Air Condition Solution</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="All kind of Blind Solutions">All kind of Blind Solutions</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Exterior Solutions">Exterior Solutions</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Fire Resistant Board">Fire Resistant Board</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Glass Solutions">Glass Solutions</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Interior Light Solutions">Interior Light Solutions</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Kitchen Cabinet">Kitchen Cabinet</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Office Furniture">Office Furniture</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Office Workstation">Office Workstation</a></li>
+                                            <li><a ui-sref="floor-ceramic-tiles" title="Sanitary Solutions">Sanitary Solutions</a></li> 
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#services-section" du-smooth-scroll du-scrollspy offset="68" title="Services">Services</a></li>
+                            <li><a href="#project-section" du-smooth-scroll du-scrollspy offset="68" title="Projects">Projects</a></li>
+                            <li><a href="#catalogue-section" du-smooth-scroll du-scrollspy offset="68" title="Catalogue">Catalogue</a></li>
+                            <li><a href="team.html" title="Our Team">Our Team</a></li>
+                            <li><a href="#contact-form-section" du-smooth-scroll du-scrollspy offset="68" title="Contact Us">Contact Us</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+                </div>
+        </header> 
+
+        <ui-view></ui-view>
+
+
+        <!--<section id="catalogue-section" class="catalogue-items">
+    <div class="section-title">
+        <h1 class="primary-color">CATALOGUE</h1>
+        <h3>Below all of our Catalogue </h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel">
+                    <div class="project-item">
+                        <div class="project-mg"><img src="img/catalogue-01.jpg" alt=""></div>
+                        <div class="project-content catalogue-content">
+                            <a href=""><span class="li li-magnifier-add"></span>Catalogue item # 01</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-mg"><img src="img/catalogue-02.jpg" alt=""></div>
+                        <div class="project-content catalogue-content">
+                            <a href=""><span class="li li-magnifier-add"></span>Catalogue item # 02</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-mg"><img src="img/catalogue-03.jpg" alt=""></div>
+                        <div class="project-content catalogue-content">
+                            <a href=""><span class="li li-magnifier-add"></span>Catalogue item # 03</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-mg"><img src="img/catalogue-02.jpg" alt=""></div>
+                        <div class="project-content catalogue-content">
+                            <a href=""><span class="li li-magnifier-add"></span>Catalogue item # 04</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+ 
+        <footer id="contact-section" class="footer-section">
+            <div class="trn-wrapper">
+                <div class="contact-us-info">
+                <div class="container">
+                    <div class="row">							
+                        <div class="col-sm-6 contact-info">
+                            <h2><span class="li li-pointer contact-icon"></span>Address</h2>
+                            <p>House # 396, Road # 29, Flat A-5</p>
+                            <p>Mohakhali DOHS, Dhaka-1206, Bangladesh</p>  
+                        </div>
+                        <div class="col-sm-6 contact-info">
+                            <h2><span class="li li-call-out contact-icon"></span>Hotline</h2>
+                            <p><span>+88 01716 399 220,</span> <span>+88 01844 027 801</span></p> 
+                            <h3>Email: info@gmail.com</h3>
+                        </div> 
+                    </div>
+                </div> 
+            </div>  
+            <div class="copyright-social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 copy-right">
+                            <p>© 2016 Sahmir Build Green Solutions. All Rights Reserved</p>
+                        </div>
+                        <div class="col-sm-6 social-items">
+                            <a href="" title="Facebook" class="fa fa-facebook"></a>
+                            <a href="" title="Facebook" class="fa fa-youtube"></a>
+                            <a href="" title="Facebook" class="fa fa-google-plus"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+
+    </div>
+    
+
+<!-- JAVASCRIPT FILES -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/angular/angular.js"></script> 
+<script type="text/javascript" src="js/angular/angular-animate.js"></script>
+<script type="text/javascript" src="js/angular/angular-scroll.js"></script>
+<script type="text/javascript" src="js/angular/match-media.js"></script>
+<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+<script type="text/javascript" src="js/angular/app.js"></script>
+<script type="text/javascript" src="js/angular/ui-routing.js"></script> 
+<script type="text/javascript" src="js/angular/layout-controller.js"></script>
+<script type="text/javascript" src="app/home/home.controller.js"></script>
+<script type="text/javascript" src="app/floor-ceramic-tiles/floor-ceramic-tiles.controller.js"></script>
+
+<!--slick carousel-->
+<!--<script type="text/javascript" src="js/angular/angular-slick.min.js"></script>
+<script type="text/javascript" src="js/angular/slick.js"></script>-->
+
+<!--REVOLUTION SLIDER-->
+<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/revolution_slider.js"></script>
+
+<!-- Owl Carousel -->
+<script type="text/javascript" src="js/owl.carousel.js"></script> 
+
+<!-- Custom script -->
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>

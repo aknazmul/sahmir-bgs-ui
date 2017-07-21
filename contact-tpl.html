@@ -1,0 +1,32 @@
+<form id="contactForm" action="contact.php" method="post">
+    <div class="field-section">
+        <div class="col-md-5">
+            <div class="filed-row">
+                <label class="field-label" for="">Full Name *</label> 
+                <input required type="text" value="" class="custom-field" name="full_name">
+            </div>
+            <div class="filed-row">
+                <label class="field-label" for="">Phone number *</label> 
+                <input type="text" value="" class="custom-field" name="phone">
+            </div>
+            <div class="filed-row">
+                <label class="field-label" for="">E-mail address</label> 
+                <input required type="email" value="" class="custom-field" name="email">
+            </div> 
+        </div>
+        <div class="col-md-7">
+            <div class="filed-row">
+                <label class="field-label" for="">Product Code (Optional)</label>
+                <input type="text" class="custom-field" name="product_code">
+            </div>
+            <div class="filed-row">
+                <label class="field-label" for="">Description</label> 
+                <textarea required maxlength="5000" cols="20" rows="5" class="custom-field custom-textarea" name="description"></textarea>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="form-action col-md-12">
+        <input type="submit" value="Send" class="form-btn" id="contact_submit" /> 
+    </div>
+</form>
