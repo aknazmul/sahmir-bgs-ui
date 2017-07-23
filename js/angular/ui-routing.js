@@ -10,7 +10,7 @@
                     templateUrl: '../app/home/home.html',
                     controller: "homeController"
                 })
-                .state ('floor-ceramic-tiles', {
+                .state('floor-ceramic-tiles', {
                     url: '/floor-ceramic-tiles',
                     templateUrl: '../app/floor-ceramic-tiles/floor-ceramic-tiles.html',
                     controller: "FloorCeramicTilesController"

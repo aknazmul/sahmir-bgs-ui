@@ -1,6 +1,6 @@
 (function () {
     'use strict'; 
-    angular.module('sahmirbgsApp', ['ui.router', 'duScroll', 'matchMedia', 'ngAnimate']);
+    angular.module('sahmirbgsApp', ['slickCarousel', 'ui.router', 'duScroll', 'matchMedia', 'ngAnimate']);
 })();
 
 
