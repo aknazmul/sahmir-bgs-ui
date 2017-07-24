@@ -33,11 +33,12 @@
 
 /*Header css 
 ##############*/
-#header.sticky { 
+.header.sticky { 
      position: fixed;
      background: rgba(1, 140, 8, 0.3); 
      height: 82px;
      z-index: 9999!important;
+     width: 100%;
 
     -webkit-transition: all 0.3s ease-in-out;
 -moz-transition: all 0.3s ease-in-out;
@@ -45,7 +46,7 @@
 -o-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
 }
-#header.sticky.affix {
+.header.sticky.affix {
     background: rgba(255, 255, 255, 1); 
     height: 72px;
 
@@ -55,16 +56,21 @@ transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
 }
+.logo-main {
+    background: #fff;
+    text-align: right;
+    padding-right: 20px;
+}
 .logo {
     background: rgba(255, 255, 255, 1);
     display: inline-block;
     padding: 11.5px 10px;
 }
-#header.sticky.affix .logo {
+.header.sticky.affix .logo {
     display: inline-block;
     padding: 12px 10px;
 }
-#header.sticky.affix .logo img {
+.header.sticky.affix .logo img {
     width: 180px;
 
     -webkit-transition: all 0.3s ease-in-out;
@@ -82,7 +88,7 @@ transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
 }
-#header.sticky.affix .top-nav ul li a {
+.header.sticky.affix .top-nav ul li a {
     padding: 0 15px;
     color: #333;
     height: 72px;
@@ -95,7 +101,8 @@ transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
 }
 .top-nav {
-    text-align: right;
+    text-align: center;
+    padding-left: 60px;
 }
 .top-nav  ul { 
     margin: 0;
@@ -159,18 +166,18 @@ transition: all 0.3s ease-in-out;
     background: #076b00;
     color: #fff;
 }
-#header.sticky.affix  .top-nav ul li ul li:hover > a {
+.header.sticky.affix  .top-nav ul li ul li:hover > a {
     background: #076b00;
     color: #fff;
 }
-#header.sticky.affix .top-nav ul li ul li a {
+.header.sticky.affix .top-nav ul li ul li a {
     padding: 6px 20px!important;
     color: #fff;
     height: auto;
     text-align: left;
     line-height: inherit;
 }
-#header.sticky.affix .top-nav ul li:hover > a {
+.header.sticky.affix .top-nav ul li:hover > a {
     text-decoration: none;
     background: rgba(1, 140, 8, 1);
     color: #fff;
@@ -218,12 +225,12 @@ transition: all 0.3s ease-in-out;
 	right:10px;
 	}
 
-#header.sticky.affix  .top-nav ul li a:hover {
+.header.sticky.affix  .top-nav ul li a:hover {
     text-decoration: none;
     background: rgba(1, 140, 8, 1);
     color: #fff;
 }
-#header.sticky.affix  .top-nav ul li a.active {
+.header.sticky.affix  .top-nav ul li a.active {
     background: rgba(1, 140, 8, 1);
      color: #fff;
 }
@@ -257,6 +264,13 @@ transition: all 0.3s ease-in-out;
 .aboutUs-cotnent {
     background: rgba(1, 140, 8, 0.7);
     padding: 40px;
+}
+.read-more-link {
+    font-style: italic;
+}
+.read-more-link:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 .aboutUs-cotnent h1 {
     margin-bottom: 20px;
@@ -686,7 +700,67 @@ transition: all 0.3s ease-in-out;
 .innterPage-title h1 {
     text-transform: uppercase;
 }
-
+.banner-main {
+    position: relative;
+}
+.banner-main img {
+    width: 100%;
+}
+.banner-content {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+}
+.banner-content h1 { 
+    margin-bottom: 30px;
+    color: #fff; 
+    text-transform: uppercase; 
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size: 60px; 
+    white-space: nowrap;
+}
+.banner-content h3 {
+    font-size: 34px;
+    width: 55%;
+    margin: 0 auto;
+    line-height: normal;
+    color: #fff;
+    margin-bottom: 40px;  
+}
+.banner-content p {
+    margin: 20px 0;
+    clear: both;
+}
+.banner-content p a{
+    font-size: 24px;
+    display: inline-block;
+}
+.slick-arrow {
+    display: none!important;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+.slick-dots li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.slick-dots li button {
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.3); 
+    font-size: 0;
+}
+.slick-dots li.slick-active button { 
+    background: rgba(1, 140, 8, 1);
+}
 /*footer css*/
 .footer-section {
     background: url('../img/map.png') no-repeat center center;

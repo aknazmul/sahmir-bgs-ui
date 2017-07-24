@@ -15,6 +15,11 @@
                     templateUrl: '../app/floor-ceramic-tiles/floor-ceramic-tiles.html',
                     controller: "FloorCeramicTilesController"
                 })
+                .state('about-us', {
+                    url: '/about-us',
+                    templateUrl: '../app/about-us/about-us.html',
+                    controller: 'AboutUsController'
+                })
                 .state('otherwise', {
                     url: '/',
                     templateUrl: '../app/home/home.html',
