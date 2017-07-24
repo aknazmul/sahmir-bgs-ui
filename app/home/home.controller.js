@@ -4,10 +4,32 @@
 	angular.module('sahmirbgsApp').controller('homeController', ['$rootScope', '$document', '$timeout', '$scope', function ($rootScope, $document, $timeout, $scope) {
 		 
 
-	//====================================
+	  //====================================
     // Slick 1
     //====================================
-    $scope.number1 = [1, 2, 3, 4, 5, 6, 7, 8];
+    // $scope.number1 = [1, 2, 3, 4, 5, 6, 7, 8];
+
+    $scope.number1 = [
+		{
+      name: "Quote For Commercial",
+      subTitle: "Happiness is an accident of nature, a beautiful and flawless aberration.",
+			imgUrl: "img/residential.jpg",   
+			linkQuote: "project-details-1",
+    },
+    {
+      name: "Quote For Residential",
+      subTitle: "Happiness is an accident of nature, a beautiful and flawless aberration.",
+			imgUrl: "img/commercial.jpg",   
+			linkQuote: "project-details-1",
+    },
+    {
+      name: "Quote For Commercial",
+      subTitle: "Happiness is an accident of nature, a beautiful and flawless aberration.",
+			imgUrl: "img/residential.jpg",   
+			linkQuote: "project-details-1",
+		}, 
+	];
+
     $scope.slickConfig1Loaded = true;
     $scope.updateNumber1 = function () {
       $scope.slickConfig1Loaded = false;
@@ -23,7 +45,7 @@
       autoplay: true,
       initialSlide: 3,
       infinite: true,
-      autoplaySpeed: 1000,
+      autoplaySpeed: 3000,
       method: {},
       event: {
         beforeChange: function (event, slick, currentSlide, nextSlide) {
@@ -114,7 +136,7 @@
     $scope.projectsLoaded = true;
     $scope.projectSetting = {
       method: {}, 
-	  autoplay: true,  
+	    autoplay: true,  
       autoplaySpeed: 3000, 
       dots: false,
       infinite: true,

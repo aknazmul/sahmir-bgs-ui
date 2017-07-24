@@ -1,63 +1,19 @@
 <div class="body-container">
     <!-- REVOLUTION SLIDER -->
     <section id="home-section">
-        <div class="slider fullwidthbanner-container roundedcorners">
+        <div class="slider fullwidthbanner-container roundedcorners"> 
             <div class="fullscreenbanner tp-simpleresponsive">
-                <ul class="hide">
+                <slick class="slider" settings="slickConfig" ng-if="slickConfig1Loaded" dots="true">
                     <!-- SLIDE  -->
-                    <li data-transition="boxfade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" data-title="Slide">
-
-                        <img src="img/1x1.png" data-lazyload="img/residential.jpg" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat"
-                        />
-
-                        <div class="tp-caption b-cap-custom b-cap-custom-heading very_large_text lfb ltt tp-resizeme" data-x="center" data-hoffset="0"
-                            data-y="center" data-voffset="-100" data-speed="600" data-start="800" data-easing="Power4.easeOut"
-                            data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500"
-                            data-endeasing="Power4.easeIn">Quote For Commercial
-                        </div>
-
-                        <div class="tp-caption b-cap-custom b-cap-custom-p medium_light_white lfb ltt tp-resizeme" data-x="center" data-hoffset="0"
-                            data-y="center" data-voffset="10" data-speed="600" data-start="900" data-easing="Power4.easeOut"
-                            data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500"
-                            data-endeasing="Power4.easeIn">Happiness is an accident of nature,<br/>a beautiful and flawless aberration.
-                        </div>
-
-                        <div class="tp-caption b-cap-custom b-cap-custom-p medium_light_white lfb ltt tp-resizeme" data-x="center" data-hoffset="0"
-                            data-y="center" data-voffset="150" data-speed="600" data-start="1000" data-easing="Power4.easeOut"
-                            data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500"
-                            data-endeasing="Power4.easeIn">
-                            <a href="#contact-form-section" du-smooth-scroll du-scrollspy offset="68" ng-click="contactFormShow = contactFormShow ? false : true"
+                    <div ng-repeat="i in number1"> 
+                        <img src="{{i.imgUrl}}" alt="" />
+                        <h1>{{i.name}}</h1>
+                        <h3>{{i.subTitle}}</h3>
+                        <p><a href="#contact-form-section" du-smooth-scroll du-scrollspy offset="68" ng-click="contactFormShow = contactFormShow ? false : true"
                                 class="banner-larg-btn" title="Quote">Submit Quote</a>
-                        </div>
-
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-transition="boxfade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" data-title="Slide">
-
-                        <img src="img/1x1.png" data-lazyload="img/commercial.jpg" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat"
-                        />
-
-                        <div class="tp-caption b-cap-custom b-cap-custom-heading very_large_text lfb ltt tp-resizeme" data-x="center" data-hoffset="0"
-                            data-y="center" data-voffset="-100" data-speed="600" data-start="800" data-easing="Power4.easeOut"
-                            data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500"
-                            data-endeasing="Power4.easeIn">Quote For Residential
-                        </div>
-
-                        <div class="tp-caption b-cap-custom b-cap-custom-p medium_light_white lfb ltt tp-resizeme" data-x="center" data-hoffset="0"
-                            data-y="center" data-voffset="10" data-speed="600" data-start="900" data-easing="Power4.easeOut"
-                            data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500"
-                            data-endeasing="Power4.easeIn">Happiness is an accident of nature,<br/>a beautiful and flawless aberration.
-                        </div>
-
-                        <div class="tp-caption b-cap-custom b-cap-custom-p medium_light_white lfb ltt tp-resizeme" data-x="center" data-hoffset="0"
-                            data-y="center" data-voffset="150" data-speed="600" data-start="1000" data-easing="Power4.easeOut"
-                            data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500"
-                            data-endeasing="Power4.easeIn">
-                            <a href="#contact-form-section" du-smooth-scroll du-scrollspy offset="68" class="banner-larg-btn" title="Quote">Submit Quote</a>
-                        </div>
-
-                    </li>
-                </ul>
+                        </p>
+                    </div>
+                </slick>
                 <div class="tp-bannertimer"></div>
             </div>
         </div>
@@ -125,7 +81,7 @@
         <div class="section-title">
             <h1 class="primary-color">OUR LATEST PROJECTS</h1>
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-        </div> 
+        </div>
         <slick class="slider" settings="projectSetting" ng-if="projectsLoaded">
             <div class="project-item" ng-repeat="project in projects">
                 <div class="project-mg"><img src="{{project.imgUrl}}" alt=""></div>
@@ -157,36 +113,36 @@
                     <a ui-sref="{{project.linkDetails}}" class="btn btn-default btn-on-green">View Details</a>
                 </div>
             </div>
-        </slick> 
+        </slick>
     </section>
 
 
-<section id="catalogue-section" class="catalogue-items">
-    <div class="section-title">
-        <h1 class="primary-color">CATALOGUE</h1>
-        <h3>Below all of our Catalogue </h3>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <slick class="slider" settings="slickConfig3" ng-if="slickConfig3Loaded">
-                    <div class="project-item" ng-repeat="catalogue in catalogues">
-                        <div class="project-mg"><img src="{{catalogue.imgUrl}}" alt=""></div>
-                        <div class="project-content catalogue-content">
-                            <a href=""><span class="li li-magnifier-add"></span>{{ catalogue.name }}</a>
+    <section id="catalogue-section" class="catalogue-items">
+        <div class="section-title">
+            <h1 class="primary-color">CATALOGUE</h1>
+            <h3>Below all of our Catalogue </h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <slick class="slider" settings="slickConfig3" ng-if="slickConfig3Loaded">
+                        <div class="project-item" ng-repeat="catalogue in catalogues">
+                            <div class="project-mg"><img src="{{catalogue.imgUrl}}" alt=""></div>
+                            <div class="project-content catalogue-content">
+                                <a href=""><span class="li li-magnifier-add"></span>{{ catalogue.name }}</a>
+                            </div>
                         </div>
-                    </div>
-                </slick>
+                    </slick>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="contact-form-section" class="order-form">
-    <div class="green-transparent padding-50-0">
-        <div class="container">
-            <div class="row order-form-Items" ng-include="'../contact-tpl.html'"></div>
+    <section id="contact-form-section" class="order-form">
+        <div class="green-transparent padding-50-0">
+            <div class="container">
+                <div class="row order-form-Items" ng-include="'../contact-tpl.html'"></div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 </div>
