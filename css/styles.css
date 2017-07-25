@@ -699,6 +699,9 @@ transition: all 0.3s ease-in-out;
 } 
 .innterPage-title h1 {
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4em;
+    color: #fff;
 }
 .banner-main {
     position: relative;

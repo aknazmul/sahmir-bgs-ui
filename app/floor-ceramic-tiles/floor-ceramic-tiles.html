@@ -23,11 +23,9 @@
             <div class="product-row row">
                 <div class="col-sm-3" ng-repeat="product in products">
                     <div class="product-item">
-                        <div class="pr-imgholder">
-                            <a ng-click="openLightboxModal($index)">
-                                <img ng-src="{{product.imgUrlstyle}}" tittle="{{product.name}}" alt="{{product.name}}">
-                                <label for="" class="zoom-icon"><i class="li li-magnifier-add"></i></label>
-                            </a>
+                        <div class="pr-imgholder"> 
+                            <img ng-src="{{product.imgUrlstyle}}" tittle="{{product.name}}" alt="{{product.name}}">
+                            <label for="" class="zoom-icon"><i class="li li-magnifier-add"></i></label>
                             <span class="pr-code">Code: {{product.pCode}}</span>
                             <h3>{{product.name}}</h3>
                         </div>
