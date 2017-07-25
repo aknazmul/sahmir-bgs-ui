@@ -18,15 +18,14 @@
     </section>
     <!-- /parallax -->
 
-
     <section class="list-section">
         <div class="container">
             <div class="product-row row">
                 <div class="col-sm-3" ng-repeat="product in products">
                     <div class="product-item">
                         <div class="pr-imgholder">
-                            <a class="fancybox-effects-b" data-fancybox-group="gallery" href="{{ product.imgUrlstyle }}" title="{{product.name}}, Code {{product.pCode}}">
-                                <img ng-src="{{ product.imgUrlstyle }}" tittle="{{product.name}}" alt="{{product.name}}">
+                            <a ng-click="openLightboxModal($index)">
+                                <img ng-src="{{product.imgUrlstyle}}" tittle="{{product.name}}" alt="{{product.name}}">
                                 <label for="" class="zoom-icon"><i class="li li-magnifier-add"></i></label>
                             </a>
                             <span class="pr-code">Code: {{product.pCode}}</span>

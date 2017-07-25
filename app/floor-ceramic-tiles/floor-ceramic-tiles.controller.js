@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	angular.module('sahmirbgsApp').controller('FloorCeramicTilesController', ['$rootScope', '$document', '$timeout', '$scope', function ($rootScope, $document, $timeout, $scope) {
+	angular.module('sahmirbgsApp').controller('FloorCeramicTilesController', ['$rootScope', '$document', '$timeout', '$scope', 'Lightbox', function ($rootScope, $document, $timeout, $scope, Lightbox) {
 
 		$scope.products = [
 			{
