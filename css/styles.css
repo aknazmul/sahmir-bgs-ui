@@ -329,7 +329,10 @@ transition: all 0.3s ease-in-out;
     margin-bottom: 0;
 }
 .project-item {
-    position: relative;
+    position: relative; 
+}
+.project-slider .project-item { 
+    height: 560px!important;
 }
 .project-item:hover .project-content{
     opacity: 1;
@@ -340,8 +343,29 @@ transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
 }
-.project-mg img {
+.project-slider .project-mg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
+    overflow: hidden;
+}
+.project-mg { 
+    width: 100%; 
+}
+.project-slider .project-mg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: auto!important;
+    margin: 0;
+    -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+.project-mg img { 
+    width: 100%; 
 }
 .project-content {
     opacity: 0;
@@ -455,10 +479,16 @@ transition: all 0.2s ease-in-out;
     position: relative;
 }
 .pr-imgholder img {
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    height: 150%;
+    -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
 }
-.product-item:hover h3 {
-    background: none; 
+ .product-item:hover h3 { 
+    background: rgba(1, 140, 8, 0.7); 
     color: #fff;
 
     -webkit-transition: all 0.4s ease-in-out;
@@ -467,6 +497,7 @@ transition: all 0.2s ease-in-out;
 -o-transition: all 0.4s ease-in-out;
 transition: all 0.4s ease-in-out;
 }
+/*
 .product-item:hover .zoom-icon { 
     opacity: 1;
 
@@ -506,7 +537,7 @@ transition: all 0.4s ease-in-out;
     width: 32px;
     margin: auto;
     height: 32px;
-}
+} */
 .pr-code {
     position: absolute;
     top: 0;
@@ -526,8 +557,8 @@ transition: all 0.2s ease-in-out;
 
 }
 .product-item:hover .pr-code {
-    color: #fff;
-    background: none;
+    /* color: #fff; */
+    background: #fff;
     
     -webkit-transition: all 0.2s ease-in-out;
 -moz-transition: all 0.2s ease-in-out;
@@ -673,9 +704,9 @@ transition: all 0.3s ease-in-out;
     display: inline-block;
     cursor: pointer;
     width: 100px;
-    height: 100px;
+    height: 80px;
     overflow: hidden;
-    border: 6px solid #cbf5cd;
+    border: 5px solid #cbf5cd;
     list-style: none;
     margin: 5px;
     padding: 0;
@@ -785,6 +816,7 @@ transition: all 0.3s ease-in-out;
     padding-left: 45px;
     color: #fff;
     text-align: center;
+    line-height: normal;
 }
 .contact-info h3{
     margin-bottom: 0;

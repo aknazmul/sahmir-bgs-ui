@@ -1,0 +1,69 @@
+<div class="body-container">
+
+    <!-- parallax -->
+    <section class="parallax service-items parallax-1" style="background-image:url(img/o3.jpg);">
+        <div class="trn-wrapper innterTitle-section">
+            <div class="parallax-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="innterPage-title">
+                                <h1 class="primary-color">{{pageTitle}}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /parallax -->
+
+
+    <section class="list-section">
+        <div class="container">
+            <div class="row" ng-repeat="project in projectItems">
+                <div class="col-md-7 details-img">
+                    <div class="details-img-holder" ng-init="imageUrl= project.imgUrl">
+                        <img ng-src="{{imageUrl}}" alt="">
+                    </div>
+                    <div class="gallery-thumb">
+                        <ul>
+                            <li ng-repeat="thumb in project.thumbs"><img ng-src="{{ thumb.thumbUrl }}" ng-click="$parent.imageUrl = thumb.thumbUrl" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 details-content">
+                    <div class="project-details-content">
+                        <ul>
+                            <li>
+                                <span class="project-icon li li-present"></span>
+                                <div class="p-line-text">
+                                    <h6>Work Status</h6>
+                                    <p>{{ project.status }}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="project-icon li li-calendar"></span>
+                                <div class="p-line-text">
+                                    <h6>Duration</h6>
+                                    <p>{{ project.duration }}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="project-icon li li-trophy"></span>
+                                <div class="p-line-text">
+                                    <h6>Cost</h6>
+                                    <p>${{ project.cost }}</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h4>Description:</h4>
+                    <p>{{ project.description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>

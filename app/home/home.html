@@ -82,9 +82,9 @@
     <section id="project-section">
         <div class="section-title">
             <h1 class="primary-color">OUR LATEST PROJECTS</h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+            <h3>Below all of our Latest project. </h3>
         </div>
-        <slick class="slider" settings="projectSetting" ng-if="projectsLoaded">
+        <slick class="slider project-slider" settings="projectSetting" ng-if="projectsLoaded">
             <div class="project-item" ng-repeat="project in projects">
                 <div class="project-mg"><img ng-src="{{project.imgUrl}}" alt=""></div>
                 <div class="project-content">
@@ -127,7 +127,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <slick class="slider" settings="slickConfig3" ng-if="slickConfig3Loaded">
+                    <slick class="slider slider-catalogue" settings="slickConfig3" ng-if="slickConfig3Loaded">
                         <div class="project-item" ng-repeat="catalogue in catalogues">
                             <div class="project-mg"><img ng-src="{{catalogue.imgUrl}}" alt=""></div>
                             <div class="project-content catalogue-content">

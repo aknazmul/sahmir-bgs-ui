@@ -1,0 +1,55 @@
+<div class="body-container">
+
+    <!-- parallax -->
+    <section class="parallax service-items parallax-1" style="background-image:url(img/o3.jpg);">
+        <div class="trn-wrapper innterTitle-section">
+            <div class="parallax-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="innterPage-title">
+                                <h1 class="primary-color">{{pageTitle}}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /parallax -->
+
+    <section class="list-section">
+        <div class="container">
+            <div class="product-row row">
+                <div class="col-sm-3" ng-repeat="product in products">
+                    <div class="product-item">
+                        <div class="pr-imgholder"> 
+                            <img ng-src="{{product.imgUrlstyle}}" tittle="{{product.name}}" alt="{{product.name}}">
+                            <!-- <label for="" class="zoom-icon"><i class="li li-magnifier-add"></i></label> -->
+                            <span class="pr-code">Code: {{product.pCode}}</span>
+                            <h3>{{product.name}}</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form-section" class="order-form">
+        <div class="green-transparent padding-50-0">
+            <div class="container">
+                <div class="row placeorder-section">
+                    <div class="col-sm-9">
+                        <h2>Feel free to call us for Order OR Submit your Query...</h2>
+                    </div>
+                    <div class="col-md-3" ng-hide="oderForm = oderForm">
+                        <a href="#contact-form-section" du-smooth-scroll du-scrollspy offset="68" ng-click="oderForm = oderForm ? false : true" class="placeorder-btn">Submit Query</a>
+                    </div>
+                </div>
+                <div ng-show="oderForm" class="row order-form-Items" ng-include="'../contact-tpl.html'"></div>
+            </div>
+        </div>
+    </section>
+
+</div>

@@ -12,13 +12,13 @@
     $scope.number1 = [
 		{
       name: "Quote For Commercial",
-      subTitle: "Happiness is an accident of nature, a beautiful and flawless aberration.",
+      subTitle: "We have an offer of Interior and Exterior Design for your Commercial Apartment.",
 			imgUrl: "img/residential.jpg",   
 			linkQuote: "project-details-1",
     },
     {
       name: "Quote For Residential",
-      subTitle: "Happiness is an accident of nature, a beautiful and flawless aberration.",
+      subTitle: "We have an offer of Interior and Exterior Design for your Residential Apartment.",
 			imgUrl: "img/commercial.jpg",   
 			linkQuote: "project-details-1",
     }, 
@@ -82,52 +82,36 @@
     $scope.projects = [
 		{
 			name: "Project # 01",
-			imgUrl: "img/02.jpg",
+			imgUrl: "img/project-01/1.jpg",
 			workStatus: "Under Construction",
-			duration: "3 Week",
-			cost: "2500.00",
-			linkDetails: "project-details-1",
+			duration: "2 Week",
+			cost: "",
+			linkDetails: "project-details-01",
 		},
 		{
 			name: "Project # 02",
-			imgUrl: "img/03.jpg",
-			workStatus: "Successfully Done",
-			duration: "5 Week",
-			cost: "4000.00",
-			linkDetails: "project-details-2",
-		}, 
-		{
-			name: "Project # 03",
-			imgUrl: "img/04.jpg",
+			imgUrl: "img/project-02/6.jpg",
 			workStatus: "Under Construction",
-			duration: "2 Week",
-			cost: "2000.00",
-			linkDetails: "project-details-3",
-		},
-		{
+			duration: "5 Week",
+			cost: "",
+			linkDetails: "project-details-02",
+    },  
+    {
 			name: "Project # 01",
-			imgUrl: "img/02.jpg",
+			imgUrl: "img/project-01/1.jpg",
 			workStatus: "Under Construction",
-			duration: "3 Week",
-			cost: "2500.00",
-			linkDetails: "project-details-1",
+			duration: "2 Week",
+			cost: "",
+			linkDetails: "project-details-01",
 		},
 		{
 			name: "Project # 02",
-			imgUrl: "img/03.jpg",
-			workStatus: "Successfully Done",
-			duration: "5 Week",
-			cost: "4000.00",
-			linkDetails: "project-details-2",
-		}, 
-		{
-			name: "Project # 03",
-			imgUrl: "img/04.jpg",
+			imgUrl: "img/project-02/6.jpg",
 			workStatus: "Under Construction",
-			duration: "2 Week",
-			cost: "2000.00",
-			linkDetails: "project-details-3",
-		}
+			duration: "5 Week",
+			cost: "",
+			linkDetails: "project-details-02",
+		},  
 	];
     $scope.projectsLoaded = true;
     $scope.projectSetting = {
