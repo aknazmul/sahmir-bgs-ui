@@ -95,6 +95,31 @@
                     templateUrl: '../app/confarance-table/confarance-table.html',
                     controller: 'ConfaranceTableController'
                 })
+                .state('workstation', {
+                    url: '/workstation',
+                    templateUrl: '../app/workstation/workstation.html',
+                    controller: 'WorkstationController'
+                })
+                .state('reception-table', {
+                    url: '/reception-table',
+                    templateUrl: '../app/reception-table/reception-table.html',
+                    controller: 'ReceptionTableController'
+                })
+                .state('acp-celling', {
+                    url: '/acp-celling',
+                    templateUrl: '../app/acp-celling/acp-celling.html',
+                    controller: 'AcpCellingController'
+                })
+                .state('gypsum-ceiling', {
+                    url: '/gypsum-ceiling',
+                    templateUrl: '../app/gypsum-ceiling/gypsum-ceiling.html',
+                    controller: 'GypsumCeilingController'
+                })
+                .state('mineral-fiber-ceiling', {
+                    url: '/mineral-fiber-ceiling',
+                    templateUrl: '../app/mineral-fiber-ceiling/mineral-fiber-ceiling.html',
+                    controller: 'MineralFiberCeilinMFController'
+                })
                 .state('otherwise', {
                     url: '/',
                     templateUrl: '../app/home/home.html',
